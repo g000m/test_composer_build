@@ -1,0 +1,34 @@
+{
+  "name": "starterpack",
+  "version": "0.0.2",
+  "description": "Starting Pack for a modern WordPress development workflow ",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "latest",
+    "grunt-php": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AvalaraDev"
+  },
+  "keywords": [
+    "Wordpress",
+    "Development",
+    "starter pack",
+    "modern",
+    "git",
+    "workflow"
+  ],
+  "author": "Atiasweb.com",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/AvalaraDev"
+  },
+  "homepage": "https://github.com/AvalaraDev"
+}

@@ -1,0 +1,54 @@
+{
+    "name": "AvalaraDev/ComposerTest",
+    "description": "Installing WordPress Fast",
+    "version": "1.0",
+    "keywords": ["wordpress","deployment"],
+    "homepage": "https://github.com/AvalaraDev/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AvalaraDev",
+            "email": "name.last@avalara.com",
+            "homepage": "https://github.com/AvalaraDev",
+            "role": "Director"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+        {
+            "type": "git",
+            "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositeTheme.git"
+        }
+        {
+            "type": "git",
+            "url": "https://github.com/AvalaraDev/test-MtgCertcaptureMicroTheme.git"
+        }
+        {
+            "type": "git",
+            "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositePlugin.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "composer/installers": "~1.0",
+        "johnpbloch/wordpress": "4.6.1",
+        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
+        "trendwerk/redirects": "1.0.6",
+        "moxie-lean/wp-gravity-forms": "0.1.5",
+        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
+        "AvalaraDev/test-MtgExciseMicrositeTheme": "dev-master",
+        "AvalaraDev/test-MtgCertcaptureMicroTheme": "dev-master",
+        "AvalaraDev/test-MtgExciseMicrositePlugin": "dev-master"
+
+    },
+    "extra": {
+    	"wordpress-install-dir": "wp",
+      "installer-paths": {
+            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+
+    }
+}
