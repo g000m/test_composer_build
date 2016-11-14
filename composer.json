@@ -17,15 +17,15 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
-        }
+        },
         {
             "type": "git",
             "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositeTheme.git"
-        }
+        },
         {
             "type": "git",
             "url": "https://github.com/AvalaraDev/test-MtgCertcaptureMicroTheme.git"
-        }
+        },
         {
             "type": "git",
             "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositePlugin.git"
@@ -38,7 +38,6 @@
         "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
         "trendwerk/redirects": "1.0.6",
         "moxie-lean/wp-gravity-forms": "0.1.5",
-        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
         "AvalaraDev/test-MtgExciseMicrositeTheme": "dev-master",
         "AvalaraDev/test-MtgCertcaptureMicroTheme": "dev-master",
         "AvalaraDev/test-MtgExciseMicrositePlugin": "dev-master"
@@ -51,4 +50,5 @@
             "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
 
     }
+  }
 }
