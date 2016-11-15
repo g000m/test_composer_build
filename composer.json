@@ -3,12 +3,11 @@
 	"description": "Installing WordPress with Composer etc",
 	"version": "1.0",
 	"keywords": ["wordpress", "deployment"],
-	"homepage": "http://AvalaraDev.com",
+	"homepage": "http://www.AvalaraDev.com",
 	"license": "MIT",
 	"authors": [{
 		"name": "AvalaraDev",
-		"email": "name.last@avalara.com",
-		"homepage": "name.last@avalara.com"
+		"email": "name.last@avalara.com"
 	}],
 	"repositories": [{
 			"type": "composer",
