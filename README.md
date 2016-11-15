@@ -8,14 +8,9 @@ This script offer a workflow to manage Wordpress installation and setup very eas
 * Move wp-config.php from WP core  directory (https://wordpress.stackexchange.com/questions/58391/is-moving-wp-config-outside-the-web-root-really-beneficial).
 * Create DB in your local system (if it doesn't exist).
 * Custom wp-content directory, outside WP folder (the script does the needed modifications to wp-config.php file).
-* Installation and activation of your prefered plugins (a set of common plugins are predefined).
 * WP-SYNC plugin to manage your DB through different enviroments.
-* Configure multi-enviroment through the setup (Comming soon).
-
 
 In 5 minutes, you will have a fresh Wordpress installation, with a lot of security and performance tweaks, plugins and more.
-
-## Whats the deal?
 
 It manages Wordpress installation with Composer. Set up is done with WP-CLI and BASH scripting. At the end, cames Grunt to edit and move some files/folders.
 
