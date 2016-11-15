@@ -1,7 +1,7 @@
 {
   "name": "starterpack",
-  "version": "0.0.2",
-  "description": "Starting Pack for a modern WordPress development workflow ",
+  "version": "1.0.0",
+  "description": "Wordpress with Composer",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:AvalaraDev"
+    "url": "https://www.avalara.com"
   },
   "keywords": [
     "Wordpress",
