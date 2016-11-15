@@ -1,102 +1,102 @@
 {
-    "name": "composer starter pack",
-    "description": "Installing WordPress with Composer etc",
+    "name": "Fuel, certcapture, etc microsites",
+    "description": "The excise microsites with landing pages.",
     "version": "1.0",
-    "keywords": [,"wordpress","deployment"],
+    "keywords": ["wordpress","deployment"],
     "homepage": "http://AvalaraDev.com",
     "license": "MIT",
     "authors": [
         {
             "name": "AvalaraDev",
             "email": "name.last@avalara.com",
-            "homepage": "name.last@avalara.com"
+            "homepage": "http://www.avalara.com"
         }
     ],
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://wpackagist.org"
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+        {
+            "type": "vcs",
+            "url": "https://github.com/AvalaraDev/MtgExciseMicrositePlugin.git"
         },
         {
-            "type": "git",
-            "package": {
-              "name": "AvalaraDev/ExciseMicrositeTheme",
-              "type": "wordpress-theme",
-              "dist": {
-                "type": "zip",
-                "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositeTheme.git"
-              }
-            }
-          },
-          {
-              "type": "git",
-              "package": {
-                "name": "AvalaraDev/CertCaptureTheme",
-                "type": "wordpress-theme",
-                "dist": {
-                  "type": "zip",
-                  "url": "https://github.com/AvalaraDev/test-MtgCertcaptureMicroTheme.git"
-                }
-              }
-            },
-            {
-                "type": "git",
-                "package": {
-                  "name": "AvalaraDev/MicrositePlugin",
-                  "type": "wordpress-plugin",
-                  "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositePlugin.git"
-                  }
-                }
-              },
-                {
-                    "type": "vcs",
-                    "package": {
-                      "name": "AvalaraDev/FusionCorePlugin",
-                      "type": "wordpress-plugin",
-                      "dist": {
-                        "type": "tgz",
-                        "url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/plugins/fusion-core_1.7.3.tgz"
-                      }
-                    }
-                  },
-                  {
-                      "type": "vcs",
-                      "package": {
-                        "name": "AvalaraDev/Avada",
-                        "type": "wordpress-theme",
-                        "dist": {
-                          "type": "tgz",
-                          "url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/themes/avada_3.8.4.tgz"
-                        }
-                      }
-                    }
-      
-        
+            "type": "vcs",
+            "url": "https://github.com/AvalaraDev/MtgCertcaptureMicroTheme.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AvalaraDev/MtgExciseMicrositeTheme.git"
+        },
+        {
+			"type": "package",
+			"package": {
+				"name": "avalaradev/fusion-core",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "tar",
+					"url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/plugins/fusion-core_1.7.3.tgz"
+				},
+				"version": "1.7.3"
+			}
+		},
+        {
+			"type": "package",
+			"package": {
+				"name": "avalaradev/gravityforms",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "tar",
+					"url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/plugins/gravityforms_1.9.13.19.tgz"
+				},
+				"version": "1.9.13.19"
+			}
+		},
+        {
+			"type": "package",
+			"package": {
+				"name": "avalaradev/avada",
+				"type": "wordpress-theme",
+				"dist": {
+					"type": "tar",
+					"url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/themes/avada_3.8.4.tgz"
+				},
+				"version": "3.8.4"
+			}
+		} 
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.6",
         "composer/installers": "*",
-        "johnpbloch/wordpress": "*",
-        "roots/wp-stage-switcher": "2.0.0",
-        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
-        "trendwerk/redirects": "1.0.6",
-        "moxie-lean/wp-gravity-forms": "0.1.5",
-        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
-        "AvalaraDev/ExciseMicrositeTheme": "dev-master",
-        "AvalaraDev/CertCaptureTheme": "dev-master",
-        "AvalaraDev/MicrositePlugin": "dev-master",
-        "AvalaraDev/FusionCorePlugin": "dev-master",
-        "AvalaraDev/Avada": "dev-master"
-        
+        "johnpbloch/wordpress": "4.4.*",
+        "naderman/composer-aws": "0.2.*",
+        "avalaradev/avada" : "3.8.4",
+        "avalaradev/mtgexcisemicrositeplugin" : "dev-master",
+        "avalaradev/mtgexcisemicrositetheme" : "dev-master",
+        "avalaradev/mtgcertcapturemicrotheme" : "dev-master",
+        "avalaradev/fusion-core" : "1.7.3",
+        "avalaradev/gravityforms" : "1.9.13.19",
+        "wpackagist-plugin/advanced-custom-fields": "4.4.4",
+        "wpackagist-plugin/better-wp-security": "5.1.1",
+        "wpackagist-plugin/calculated-fields-form": "1.0.123",  
+        "wpackagist-plugin/custom-css-and-javascript": "2.0.6", 
+        "wpackagist-plugin/disable-search": "1.4.2",
+        "wpackagist-plugin/permalink-shortcode": "1.0.0",
+        "wpackagist-plugin/ps-disable-auto-formatting": "1.0.10",
+        "wpackagist-plugin/wistia-wordpress-oembed-plugin": "0.8",
+        "wpackagist-plugin/wordpress-importer": "0.6.1",
+        "wpackagist-plugin/wordpress-mu-domain-mapping": "0.5.5.1",
+        "wpackagist-plugin/wp-mail-smtp": "0.9.5", 
+        "wpackagist-plugin/wp-super-cache": "1.4.7",
+        "wpackagist-plugin/wordpress-seo": "3.0.7"        
     },
     "extra": {
-    	"wordpress-install-dir": "wp",
-      "installer-paths": {
-            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
-
-    }
+    	"wordpress-install-dir": "html",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"],
+	        "wp-content/mu-plugins/{$name}/" : ["type:wordpress-muplugin"]
+	        }
     }
 }
