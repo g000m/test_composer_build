@@ -1,102 +1,93 @@
 {
-    "name": "composer starter pack",
-    "description": "Installing WordPress with Composer etc",
-    "version": "1.0",
-    "keywords": [,"wordpress","deployment"],
-    "homepage": "http://AvalaraDev.com",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "AvalaraDev",
-            "email": "name.last@avalara.com",
-            "homepage": "name.last@avalara.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        },
-        {
-            "type": "git",
-            "package": {
-              "name": "AvalaraDev/ExciseMicrositeTheme",
-              "type": "wordpress-theme",
-              "dist": {
-                "type": "zip",
-                "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositeTheme.git"
-              }
-            }
-          },
-          {
-              "type": "git",
-              "package": {
-                "name": "AvalaraDev/CertCaptureTheme",
-                "type": "wordpress-theme",
-                "dist": {
-                  "type": "zip",
-                  "url": "https://github.com/AvalaraDev/test-MtgCertcaptureMicroTheme.git"
-                }
-              }
-            },
-            {
-                "type": "git",
-                "package": {
-                  "name": "AvalaraDev/MicrositePlugin",
-                  "type": "wordpress-plugin",
-                  "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/AvalaraDev/test-MtgExciseMicrositePlugin.git"
-                  }
-                }
-              },
-                {
-                    "type": "vcs",
-                    "package": {
-                      "name": "AvalaraDev/FusionCorePlugin",
-                      "type": "wordpress-plugin",
-                      "dist": {
-                        "type": "tgz",
-                        "url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/plugins/fusion-core_1.7.3.tgz"
-                      }
-                    }
-                  },
-                  {
-                      "type": "vcs",
-                      "package": {
-                        "name": "AvalaraDev/Avada",
-                        "type": "wordpress-theme",
-                        "dist": {
-                          "type": "tgz",
-                          "url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/themes/avada_3.8.4.tgz"
-                        }
-                      }
-                    }
-      
-        
-    ],
-    "require": {
-        "php": ">=5.4",
-        "composer/installers": "*",
-        "johnpbloch/wordpress": "*",
-        "roots/wp-stage-switcher": "2.0.0",
-        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
-        "trendwerk/redirects": "1.0.6",
-        "moxie-lean/wp-gravity-forms": "0.1.5",
-        "horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
-        "AvalaraDev/ExciseMicrositeTheme": "dev-master",
-        "AvalaraDev/CertCaptureTheme": "dev-master",
-        "AvalaraDev/MicrositePlugin": "dev-master",
-        "AvalaraDev/FusionCorePlugin": "dev-master",
-        "AvalaraDev/Avada": "dev-master"
-        
-    },
-    "extra": {
-    	"wordpress-install-dir": "wp",
-      "installer-paths": {
-            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+	"name": "composer starter pack",
+	"description": "Installing WordPress with Composer etc",
+	"version": "1.0",
+	"keywords": ["wordpress", "deployment"],
+	"homepage": "http://AvalaraDev.com",
+	"license": "MIT",
+	"authors": [{
+		"name": "AvalaraDev",
+		"email": "name.last@avalara.com",
+		"homepage": "name.last@avalara.com"
+	}],
+	"repositories": [{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}, {
+			"type": "git",
+			"package": {
+				"name": "AvalaraDev/ExciseMicrositeTheme",
+				"type": "wordpress-theme",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/AvalaraDev/test-MtgExciseMicrositeTheme.git"
+				}
+			}
+		}, {
+			"type": "git",
+			"package": {
+				"name": "AvalaraDev/CertCaptureTheme",
+				"type": "wordpress-theme",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/AvalaraDev/test-MtgCertcaptureMicroTheme.git"
+				}
+			}
+		}, {
+			"type": "git",
+			"package": {
+				"name": "AvalaraDev/MicrositePlugin",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/AvalaraDev/test-MtgExciseMicrositePlugin.git"
+				}
+			}
+		}, {
+			"type": "package",
+			"package": {
+				"name": "AvalaraDev/FusionCorePlugin",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "tgz",
+					"url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/plugins/fusion-core_1.7.3.tgz"
+				}
+			}
+		}, {
+			"type": "package",
+			"package": {
+				"name": "AvalaraDev/Avada",
+				"type": "wordpress-theme",
+				"dist": {
+					"type": "tgz",
+					"url": "https://s3-us-west-2.amazonaws.com/mtg-composer-deploy/themes/avada_3.8.4.tgz"
+				}
+			}
+		}
 
-    }
-    }
+
+	],
+	"require": {
+		"php": ">=5.4",
+		"composer/installers": "*",
+		"johnpbloch/wordpress": "*",
+		"roots/wp-stage-switcher": "2.0.0",
+		"horiondigital/advanced-custom-fields-front-end-editor": "dev-master",
+		"trendwerk/redirects": "1.0.6",
+		"moxie-lean/wp-gravity-forms": "0.1.5",
+		"AvalaraDev/ExciseMicrositeTheme": "dev-master",
+		"AvalaraDev/CertCaptureTheme": "dev-master",
+		"AvalaraDev/MicrositePlugin": "dev-master",
+		"AvalaraDev/FusionCorePlugin": "dev-master",
+		"AvalaraDev/Avada": "dev-master"
+
+	},
+	"extra": {
+		"wordpress-install-dir": "wp",
+		"installer-paths": {
+			"public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+
+		}
+	}
 }
