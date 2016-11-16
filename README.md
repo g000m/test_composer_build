@@ -27,11 +27,12 @@ Before getting started, make sure you have installed, up and running:
 As some of the code in this sample is pulled from our github private repositories, you'll need to configure your system to use your Github key when you run the script. 
 
 __To set up a Github key__
-1. Log in to Github and visit https://github.com/settings/tokens. 
-2. Click __Generate new token__. 
+
+1. Log in to Github and visit https://github.com/settings/tokens.
+2. Click __Generate new token__.
 3. Type a description for the token.
 4. Check the __repo__ box at the top of the scopes list.  
-5. Click __Generate token__
+5. Click __Generate token__.
 
 Use the new token value as an option in the following composer command. Use your Github user name and the token value below. 
 
