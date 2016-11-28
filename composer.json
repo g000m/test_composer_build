@@ -97,5 +97,8 @@
             "wp-content/themes/{$name}/": ["type:wordpress-theme"],
 	        "wp-content/mu-plugins/{$name}/" : ["type:wordpress-muplugin"]
 	        }
+    },
+    "scripts": {
+       "post-update-cmd": ["if [ -d \"./html/wp-content\" ] \nthen \nrm -rf ./html/wp-content \nln -s ../wp-content/ ./html/wp-content \nfi"]
     }
 }
